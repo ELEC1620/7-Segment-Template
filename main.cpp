@@ -25,17 +25,19 @@ DigitalOut seg8(PB_14);
 
 /*[Part 2-start]
 //segment       A       B     C      D    E     F      G        
-BusOut SegDis(PA_11, PA_12, PB_2, PB_14, PB_15, PB_12, PB_11);
-DigitalOut decimal_point(PB_1);
+BusOut SegDis(PA_11, ); //Add remaining pins in correct order
+DigitalOut decimal_point(); //Add pin for the Decimal Point 
 
 //               0     1     2     3     4     5     6     7     8     9     A     B     C     D     E     F    
-int hexDis[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x67, 0x77, 0x7C, 0x39, 0x5E, 0x79, 0x71};
+int hexDis[] = {0x3F, 0x06, }; // Add the rest of the hex values associated with the dispplay items 0-F
 int dp_status = 0;
 
 void SegDis_init();
-void SegDis_endcycle();
 [Part 2-end]*/
 
+/*[Part 3-start]
+void SegDis_endcycle();
+[Part 3-end]*/
 
 int main()
 {
