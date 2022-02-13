@@ -101,13 +101,5 @@ void SegDis_endcycle(){
     ThisThread::sleep_for(200ms);
     SegDis.write(0x01); 
     ThisThread::sleep_for(200ms);
-    SegDis.write(0x41); 
-    ThisThread::sleep_for(200ms);
-    SegDis.write(0x49); 
-    ThisThread::sleep_for(200ms);
-    SegDis.write(0x41); 
-    ThisThread::sleep_for(200ms);
-    SegDis.write(0x01);
-    ThisThread::sleep_for(200ms);
     SegDis.write(0x00);
 }[Part 3-end]*/
